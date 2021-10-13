@@ -3,8 +3,9 @@ const player1 = {
   hp: 100,
   img: '',
   weapon: [],
-  attack: () => {
+  attack() {
     console.log(`${this.name} fight`)
+    console.log(this, 'this')
   }
 }
 
@@ -13,7 +14,7 @@ const player2 = {
   hp: 100,
   img: '',
   weapon: [],
-  attack: () => {
+  attack() {
     console.log(`${this.name} fight`)
   }
 }
@@ -43,4 +44,3 @@ const createPlayer = (
 
 createPlayer('player1', player1.name, player1.hp);
 createPlayer('player2', player2.name, player2.hp);
-
